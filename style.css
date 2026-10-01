@@ -1,0 +1,36 @@
+:root {
+            --bs-body-bg: #0b131f;
+            --bs-body-color: #e2e8f0;
+        }
+        .bg-glass {
+            background: rgba(15, 23, 42, 0.75);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-accent {
+            color: #06b6d4;
+        }
+        .btn-accent {
+            background-color: #06b6d4;
+            color: #0f172a;
+            font-weight: 600;
+            border: none;
+        }
+        .btn-accent:hover {
+            background-color: #22d3ee;
+            color: #0f172a;
+        }
+        .card-plane {
+            transition: transform 0.3s ease, border-color 0.3s ease;
+            background: #1e293b;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .card-plane:hover {
+            transform: translateY(-8px);
+            border-color: #06b6d4;
+        }
+        .hero-section {
+            background: linear-gradient(180deg, rgba(11, 19, 31, 0.4) 0%, #0b131f 100%), radial-gradient(circle at 50% 30%, #1e293b 0%, #0b131f 70%);
+            min-height: 90vh;
+        }

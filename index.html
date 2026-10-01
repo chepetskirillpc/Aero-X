@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AeroX | Sky Without Limits</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg sticky-top bg-glass navbar-dark">
+    <div class="container">
+        <a class="navbar-brand fw-bold fs-3 text-uppercase tracking-wide" href="#">
+            <i class="bi bi-airplane-fill text-accent me-2"></i>Aero<span class="text-accent">X</span>
+        </a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-medium">
+                <li class="nav-item"><a class="nav-link px-3" href="#fleet">Fleet</a></li>
+                <li class="nav-item"><a class="nav-link px-3" href="#specs">Specs</a></li>
+                <li class="nav-item"><a class="nav-link px-3" href="#range">Calculator</a></li>
+                <li class="nav-item"><a class="nav-link px-3" href="#reviews">Reviews</a></li>
+            </ul>
+            <a href="#testflight" class="btn btn-accent ms-lg-3 px-4 rounded-pill">Book Flight</a>
+        </div>
+    </div>
+</nav>
+
+<header class="hero-section d-flex align-items-center text-center text-lg-start">
+    <div class="container">
+        <div class="row align-items-center gy-5">
+            <div class="col-lg-7">
+                <span class="badge bg-secondary bg-opacity-25 text-accent border border-info border-opacity-25 mb-3 px-3 py-2 rounded-pill">
+                    Next-Gen Aviation Era
+                </span>
+                <h1 class="display-3 fw-bold text-white mb-3">Conquer the Skies with Engineering Mastery</h1>
+                <p class="lead text-secondary mb-4 fs-4">From supersonic air superiority fighters to luxury ultra-long-range jets. Experience ultimate flight freedom.</p>
+                <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start">
+                    <a href="#fleet" class="btn btn-accent btn-lg px-4 rounded-pill">Explore Fleet</a>
+                    <a href="#range" class="btn btn-outline-light btn-lg px-4 rounded-pill">Calculate Route</a>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="p-4 rounded-4 bg-glass">
+                    <div class="row g-3 text-center">
+                        <div class="col-6">
+                            <div class="p-3 bg-dark bg-opacity-50 rounded-3">
+                                <h3 class="fw-bold text-accent mb-0">Mach 2.2</h3>
+                                <small class="text-secondary">Max Speed</small>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="p-3 bg-dark bg-opacity-50 rounded-3">
+                                <h3 class="fw-bold text-accent mb-0">14,800 km</h3>
+                                <small class="text-secondary">Range</small>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="p-3 bg-dark bg-opacity-50 rounded-3">
+                                <h3 class="fw-bold text-accent mb-0">60,000 ft</h3>
+                                <small class="text-secondary">Service Ceiling</small>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="p-3 bg-dark bg-opacity-50 rounded-3">
+                                <h3 class="fw-bold text-accent mb-0">0%</h3>
+                                <small class="text-secondary">Net Carbon Goal</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="py-5" id="fleet">
+    <div class="container py-4">
+        <div class="text-center mb-5">
+            <h2 class="display-5 fw-bold text-white">Our Fleet</h2>
+            <p class="text-secondary">Select your aircraft category for detailed specifications</p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="card card-plane h-100 rounded-4 overflow-hidden text-white">
+                    <img src="assets/f-22.jpg" class="card-img-top object-fit-cover" alt="F-22 Raptor" style="height: 220px; background-color: #334155;">
+                    <div class="card-body p-4 d-flex flex-column">
+                        <span class="text-accent small fw-bold text-uppercase">5th-Gen Stealth Fighter</span>
+                        <h4 class="card-title mt-1 fw-bold">F-22 Raptor</h4>
+                        <p class="card-text text-secondary mb-4 flex-grow-1">Advanced tactical stealth fighter aircraft engineered for ultimate air dominance and agility.</p>
+                        <button class="btn btn-outline-info rounded-pill w-100" data-bs-toggle="modal" data-bs-target="#planeModal" data-plane="F-22 Raptor">View Specs</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card card-plane h-100 rounded-4 overflow-hidden text-white">
+                    <img src="assets/concorde.jpg" class="card-img-top object-fit-cover" alt="Concorde SST" style="height: 220px; background-color: #334155;">
+                    <div class="card-body p-4 d-flex flex-column">
+                        <span class="text-accent small fw-bold text-uppercase">Supersonic Passenger Jet</span>
+                        <h4 class="card-title mt-1 fw-bold">Concorde SST</h4>
+                        <p class="card-text text-secondary mb-4 flex-grow-1">Iconic supersonic airliner designed to slash transatlantic travel times in half.</p>
+                        <button class="btn btn-outline-info rounded-pill w-100" data-bs-toggle="modal" data-bs-target="#planeModal" data-plane="Concorde SST">View Specs</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card card-plane h-100 rounded-4 overflow-hidden text-white">
+                    <img src="assets/gulfstream.jpg" class="card-img-top object-fit-cover" alt="Gulfstream G700" style="height: 220px; background-color: #334155;">
+                    <div class="card-body p-4 d-flex flex-column">
+                        <span class="text-accent small fw-bold text-uppercase">Ultra-Long Range Business Jet</span>
+                        <h4 class="card-title mt-1 fw-bold">Gulfstream G700</h4>
+                        <p class="card-text text-secondary mb-4 flex-grow-1">The pinnacle of business aviation featuring the industry's most spacious cabin.</p>
+                        <button class="btn btn-outline-info rounded-pill w-100" data-bs-toggle="modal" data-bs-target="#planeModal" data-plane="Gulfstream G700">View Specs</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card card-plane h-100 rounded-4 overflow-hidden text-white">
+                    <img src="assets/a350.webp" class="card-img-top object-fit-cover" alt="Airbus A350-1000" style="height: 220px; background-color: #334155;">
+                    <div class="card-body p-4 d-flex flex-column">
+                        <span class="text-accent small fw-bold text-uppercase">Wide-Body Commercial Liner</span>
+                        <h4 class="card-title mt-1 fw-bold">Airbus A350-1000</h4>
+                        <p class="card-text text-secondary mb-4 flex-grow-1">Next-generation long-haul airliner utilizing carbon-fiber composite architecture.</p>
+                        <button class="btn btn-outline-info rounded-pill w-100" data-bs-toggle="modal" data-bs-target="#planeModal" data-plane="Airbus A350-1000">View Specs</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card card-plane h-100 rounded-4 overflow-hidden text-white">
+                    <img src="assets/blackbird.avif" class="card-img-top object-fit-cover" alt="SR-71 Blackbird" style="height: 220px; background-color: #334155;">
+                    <div class="card-body p-4 d-flex flex-column">
+                        <span class="text-accent small fw-bold text-uppercase">Strategic Reconnaissance Aircraft</span>
+                        <h4 class="card-title mt-1 fw-bold">SR-71 Blackbird</h4>
+                        <p class="card-text text-secondary mb-4 flex-grow-1">Legendary high-altitude reconnaissance platform operating at near-space boundaries.</p>
+                        <button class="btn btn-outline-info rounded-pill w-100" data-bs-toggle="modal" data-bs-target="#planeModal" data-plane="SR-71 Blackbird">View Specs</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card card-plane h-100 rounded-4 overflow-hidden text-white">
+                    <img src="assets/b787.jpg" class="card-img-top object-fit-cover" alt="Boeing 787 Dreamliner" style="height: 220px; background-color: #334155;">
+                    <div class="card-body p-4 d-flex flex-column">
+                        <span class="text-accent small fw-bold text-uppercase">High-Efficiency Airliner</span>
+                        <h4 class="card-title mt-1 fw-bold">Boeing 787 Dreamliner</h4>
+                        <p class="card-text text-secondary mb-4 flex-grow-1">Revolutionary commercial aircraft delivering unprecedented fuel efficiency and passenger comfort.</p>
+                        <button class="btn btn-outline-info rounded-pill w-100" data-bs-toggle="modal" data-bs-target="#planeModal" data-plane="Boeing 787 Dreamliner">View Specs</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5 bg-glass" id="specs">
+    <div class="container py-4">
+        <div class="row align-items-center gy-5">
+            <div class="col-lg-6">
+                <h2 class="display-6 fw-bold text-white mb-4">Cutting-Edge Aeronautical Standards</h2>
+                <div class="d-flex mb-4">
+                    <div class="fs-2 text-accent me-3"><i class="bi bi-shield-check"></i></div>
+                    <div>
+                        <h5 class="text-white">AI-Assisted Autonomous Flight</h5>
+                        <p class="text-secondary">Integrated neural avionics assisting pilots through adverse weather conditions seamlessly.</p>
+                    </div>
+                </div>
+                <div class="d-flex mb-4">
+                    <div class="fs-2 text-accent me-3"><i class="bi bi-speedometer2"></i></div>
+                    <div>
+                        <h5 class="text-white">Advanced Aerodynamic Profiling</h5>
+                        <p class="text-secondary">Reduced drag coefficient lowering fuel consumption up to 25% over long ranges.</p>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="fs-2 text-accent me-3"><i class="bi bi-cpu"></i></div>
+                    <div>
+                        <h5 class="text-white">Next-Gen Composite Materials</h5>
+                        <p class="text-secondary">Titanium alloys and reinforced carbon fiber providing ultimate structural integrity.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="p-4 p-md-5 rounded-4 bg-dark border border-secondary border-opacity-25">
+                    <h4 class="text-white mb-4">Performance Metrics</h4>
+                    <span class="text-secondary small">Fuel Efficiency Score</span>
+                    <div class="progress mb-3 bg-secondary bg-opacity-25" style="height: 10px;">
+                        <div class="progress-bar bg-info" style="width: 92%;"></div>
+                    </div>
+                    <span class="text-secondary small">Climb Rate Index</span>
+                    <div class="progress mb-3 bg-secondary bg-opacity-25" style="height: 10px;">
+                        <div class="progress-bar bg-info" style="width: 85%;"></div>
+                    </div>
+                    <span class="text-secondary small">Acoustic Noise Reduction</span>
+                    <div class="progress mb-3 bg-secondary bg-opacity-25" style="height: 10px;">
+                        <div class="progress-bar bg-info" style="width: 78%;"></div>
+                    </div>
+                    <span class="text-secondary small">Max Range Capability</span>
+                    <div class="progress bg-secondary bg-opacity-25" style="height: 10px;">
+                        <div class="progress-bar bg-info" style="width: 96%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5" id="range">
+    <div class="container py-4">
+        <div class="p-4 p-md-5 rounded-4 bg-glass border border-info border-opacity-25 text-center max-w-760 mx-auto">
+            <h3 class="fw-bold text-white mb-2">Flight Time Estimator</h3>
+            <p class="text-secondary mb-4">Calculate estimated route duration based on cruise velocity specifications</p>
+
+            <div class="row g-3 justify-content-center mb-4">
+                <div class="col-md-5">
+                    <label for="distInput" class="form-label text-start w-100 text-secondary">Distance (km)</label>
+                    <input type="number" id="distInput" class="form-control bg-dark text-white border-secondary" value="5500" placeholder="e.g. 3000">
+                </div>
+                <div class="col-md-5">
+                    <label for="speedSelect" class="form-label text-start w-100 text-secondary">Aircraft Class</label>
+                    <select id="speedSelect" class="form-select bg-dark text-white border-secondary">
+                        <option value="900">Commercial Jet (900 km/h)</option>
+                        <option value="1100">Gulfstream G700 (1100 km/h)</option>
+                        <option value="2400">Supersonic Concorde (2400 km/h)</option>
+                    </select>
+                </div>
+            </div>
+
+            <button onclick="calculateFlightTime()" class="btn btn-accent px-4 py-2 rounded-pill">Calculate Route</button>
+
+            <div class="mt-4 p-3 bg-dark bg-opacity-50 rounded-3 d-none" id="calcResult">
+                <span class="text-secondary">Estimated Flight Duration:</span>
+                <h2 class="text-accent fw-bold my-1" id="timeValue">0 hrs 0 mins</h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5 bg-glass" id="reviews">
+    <div class="container py-4">
+        <h2 class="display-6 fw-bold text-center text-white mb-5">Captain Testimonials</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="p-4 rounded-4 bg-dark h-100 border border-secondary border-opacity-25">
+                    <div class="text-warning mb-2"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                    <p class="text-secondary fs-6">"Operating the supersonic fleet models is an entirely new dimension of control. Dynamic responsiveness is second to none."</p>
+                    <h6 class="text-white mb-0 mt-3">Alex V.</h6>
+                    <small class="text-accent">Test Pilot</small>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-4 rounded-4 bg-dark h-100 border border-secondary border-opacity-25">
+                    <div class="text-warning mb-2"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                    <p class="text-secondary fs-6">"The G700 surpassed every expectation. Acoustic insulation and smooth handling make long-haul flights effortless."</p>
+                    <h6 class="text-white mb-0 mt-3">Marcus S.</h6>
+                    <small class="text-accent">Corporate Aviation Captain</small>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-4 rounded-4 bg-dark h-100 border border-secondary border-opacity-25">
+                    <div class="text-warning mb-2"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                    <p class="text-secondary fs-6">"Redundant flight control systems provide supreme confidence even during extreme turbulence operations."</p>
+                    <h6 class="text-white mb-0 mt-3">Elena K.</h6>
+                    <small class="text-accent">Commercial Captain</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5" id="testflight">
+    <div class="container py-4">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="p-4 p-md-5 rounded-4 bg-glass text-center border border-secondary border-opacity-25">
+                    <h2 class="fw-bold text-white mb-2">Request a Flight Demonstration</h2>
+                    <p class="text-secondary mb-4">Submit your details and an aviation specialist will contact you shortly.</p>
+                    
+                    <form class="row g-3 text-start">
+                        <div class="col-md-6">
+                            <label class="form-label text-secondary">Full Name</label>
+                            <input type="text" class="form-control bg-dark text-white border-secondary" placeholder="John Doe">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label text-secondary">Phone Number</label>
+                            <input type="tel" class="form-control bg-dark text-white border-secondary" placeholder="+1 (555) 000-0000">
+                        </div>
+                        <div class="col-12">
+                            <label class="form-label text-secondary">Aircraft Category</label>
+                            <select class="form-select bg-dark text-white border-secondary">
+                                <option>Military & Tactical Aircraft</option>
+                                <option>Private Executive Jets</option>
+                                <option>Commercial Airliners</option>
+                            </select>
+                        </div>
+                        <div class="col-12 text-center mt-4">
+                            <button type="submit" class="btn btn-accent btn-lg px-5 rounded-pill w-100 w-md-auto">Submit Request</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="py-4 border-top border-secondary border-opacity-25 text-center text-secondary small">
+    <div class="container">
+        <p class="mb-0">&copy; 2026 AeroX Aviation Technology. All rights reserved.</p>
+    </div>
+</footer>
+
+<div class="modal fade" id="planeModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-dark text-white border-secondary">
+            <div class="modal-header border-secondary">
+                <h5 class="modal-title fw-bold" id="modalPlaneName">Aircraft</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <p class="text-secondary">Detailed technical documentation available upon request via our aviation dispatch department.</p>
+                <ul class="list-group list-group-flush bg-transparent">
+                    <li class="list-group-item bg-transparent text-white border-secondary d-flex justify-content-between">
+                        <span>Status</span>
+                        <span class="text-accent fw-bold">Flight Ready</span>
+                    </li>
+                    <li class="list-group-item bg-transparent text-white border-secondary d-flex justify-content-between">
+                        <span>Base Hangar</span>
+                        <span class="text-white">AeroX Station 01</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="modal-footer border-secondary">
+                <button type="button" class="btn btn-secondary rounded-pill" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script>
+    function calculateFlightTime() {
+        const dist = parseFloat(document.getElementById('distInput').value);
+        const speed = parseFloat(document.getElementById('speedSelect').value);
+        
+        if (dist && dist > 0) {
+            const hoursDec = dist / speed;
+            const hours = Math.floor(hoursDec);
+            const minutes = Math.round((hoursDec - hours) * 60);
+            
+            document.getElementById('timeValue').innerText = hours + ' hrs ' + minutes + ' mins';
+            document.getElementById('calcResult').classList.remove('d-none');
+        }
+    }
+
+    const planeModal = document.getElementById('planeModal');
+    if (planeModal) {
+        planeModal.addEventListener('show.bs.modal', function (event) {
+            const button = event.relatedTarget;
+            const planeName = button.getAttribute('data-plane');
+            document.getElementById('modalPlaneName').innerText = planeName;
+        });
+    }
+</script>
+</body>
+</html>
